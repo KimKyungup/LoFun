@@ -20,27 +20,49 @@
 
 
   <!-- Begin page content -->
-  <section class="jumbotron">
-    <div class="container">  
-      <h1>TEAM R</h1>
-      <h4> for 2018 Hackathon of Samsung Electronics</h4>
-      <div class="py-2">
-        <p class="lead text-muted">
-          <h6>Member 1: Ethan Kim</h6>
-          <h6>Member 2: Mickey</h6>
-          <h6>Member 3: </h6>
-          <h6>Member 4: </h6>
-          <h6>Member 5: </h6>
-        </p>      
+    <div class="container">         
+      <div class="row">
+        <div class="col">
+          <h4>일반 Funding</h4>          
+          <h5>일정 금액과 기간을 정하여 모금을 진행 합니다.</h5>
+          <button type="button"  id="raisefund0" class="btn btn-primary btn-lg btn-block">펀딩하기</button>
+        </div>
       </div>
-    </div>   
-  </section>   
+
+      <div class="row">
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h4>지분형 Funding</h4>
+          <h5>단위 참여 금액에 따라 지분을 배정하여 향후 수혜자가 지분에 따라 보상을 하게 됩니다.</h4>
+          <button type="button" id="raisefund1" class="btn btn-primary btn-lg btn-block">펀딩하기</button>
+        </div>
+      </div>
+
+      <div class="row">
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h4>연속형 Funding</h4>
+          <h5>기간과 금액이 정해지지 않고 계속 진행되는 Fund로 수혜자는 일정기간동안 일정 금액만 인출 가능하며 투자자는 기간에 따라 투자금액의 일부를 회수 가능 합니다.</h5>
+          <button type="button"  id="raisefund2"class="btn btn-primary btn-lg btn-block">펀딩하기</button>
+        </div>
+      </div>
+    </div>
 
   <%- include footer.ejs %>  
 
   <!-- JavaScript -->
   <script type="text/javascript">
 
+    $(document).ready(function(){
+        $("#raisefund0").click(function(){
+          $(this).button('toggle');
+            alert("raisefund0");
+        });
+    });
   </script>
 
   <!-- Optional JavaScript -->
